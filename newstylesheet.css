@@ -1,0 +1,281 @@
+* {
+	padding:0px;
+    margin: 0px;
+	font-family: "arial",Times New Roman, Times, serif;
+	color: #FFF;
+	
+}
+html
+{
+	  background-image:url("img/background.png");
+	  background-repeat:no-repeat;
+	  background-size: cover;
+	  
+}
+Video
+ {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+	z-index: -1;
+}
+
+
+header{
+	position: relative;
+    text-align: center;
+    color: #FFF;
+    margin: auto;
+    font-size:30pt;
+	background-image:url("img/companylogoBG.png");
+	width:960px;
+	height:200px;
+}
+header img
+{
+	 z-index: -1;
+}
+h1
+{
+    font-family: "Lucida Grande", Tahoma, Sans-Serif;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	text-shadow:
+    -1px -1px 0 #000,
+    2px -1px 0 #000,
+    -1px 2px 0 #000,
+    2px 2px 0 #000;
+	width:100%;
+}
+
+.navigbar
+{
+	display: flex;
+    justify-content: center;
+	width:100%;
+	height:50px;
+	background-color:#707070;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+}
+
+a.navilink
+{
+	margin:auto;
+	color:white;
+	text-decoration:none;
+}
+a:hover {
+    color: #000;
+}
+
+.navigbar ul li 
+{
+	margin-left:10px;
+	margin-right:10px;
+	float :left;
+	font-size:30px;
+	padding-left:10px;
+    padding-right:10px;
+	padding-bottom:0px;
+	padding-top:5px;
+	background-color:#707070;
+	list-style-type:none;
+}
+
+.mycontent {
+	width:960px;
+  
+	margin: auto;
+
+}
+section
+{
+	background-color:#2699FB;
+}
+#content2 img{
+	width:960px;
+	height:400px;
+	
+}
+#content2 h2
+{
+font-size:76px;	
+font-family: "arial",Times New Roman, Times, serif;
+text-align:center;
+height:162px;
+font-weight: normal;
+padding-top:30px;
+padding-bottom:38px;
+}
+#content3 
+{
+	height:100%;
+}
+#content3 h2
+{
+font-size:76px;	
+font-family: "arial",Times New Roman, Times, serif;
+text-align:center;
+
+font-weight: normal;
+padding-top:20px;
+padding-bottom:20px;
+}
+#content3 img
+{
+	background-color:#FFF;
+	width:300px;
+	height:200px;
+	margin-bottom:0.417em;
+	margin-top:0.417em;
+	border:1px solid #AAA;
+	
+}
+.picsproduct
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-around;
+  background-color:#FFF;
+  border:1px solid #AAA;
+  padding-left:10px;
+  padding-right:0.625em;
+  padding-bottom:0.625em;
+  padding-top:0.625em;
+}
+	
+ #content4 h2
+{
+font-size:76px;	
+font-family: "arial",Times New Roman, Times, serif;
+text-align:center;
+
+font-weight: normal;
+padding-top:20px;
+padding-bottom:20px;
+}
+ .formbox 
+ {
+	background-color:#F5F5F5; 
+	border:1px solid #AAA;
+    width:960px;
+	height:640px;
+	outline: 0;
+ }
+ textarea:focus, input:focus{
+    outline: none;
+}
+ .formbox > p
+ {
+	padding:34px; 
+	font-size:30px;
+ }
+ .formbody
+ { 
+	  display: flex;
+      align-items: center;
+      flex-direction: column;
+	
+ }
+ .formbody input
+ {
+	
+	 width:820px; 
+	 height:56px;
+	 margin-top:26px;
+	 font-size:22px;
+	 border-top:1px solid #707070;
+	border-left:1px solid #AAA;
+	border-right:1px solid #AAA;
+	border-bottom:1px solid #AAA;
+
+ }
+ .theformdropdown 
+ {
+	width:820px; 
+	height:16px;
+	background-color:#FFF;
+	font-size:22px;
+	padding-top:20px;
+	padding-bottom:20px;
+	border-top:1px solid #707070;
+	border-left:1px solid #AAA;
+	border-right:1px solid #AAA;
+	border-bottom:1px solid #AAA;
+ }
+ .theformdropdown select
+ {
+	width:520px;
+	height:40px;	
+	float:right;
+	margin-top:-15px;
+	font-size:22px;
+	margin-right:10px;
+ }	 
+ .formbody textarea
+ {
+	 height:152px;
+	 width:820px; 
+	 margin-top:26px;
+	 margin-bottom:-4px;
+	 font-size:22px;
+ }
+fieldset
+{
+		   border-style:none;
+}
+ .thesubmitbtn
+ {
+	 background-color:#2699FB; 
+	 width:820px;
+	 height:62px;
+	 margin-top:26px;
+ }
+  .thesubmitbtn value
+  {
+	 	font-size:125px; 
+  }
+ #content4 p
+ {
+	color: #707070; 
+ }
+ 
+ .input, select, textarea ,label,option,value,type
+ {
+color: #707070;
+}
+::placeholder
+ { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #707070;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder 
+{ /* Internet Explorer 10-11 */
+    color: #707070;
+}
+
+::-ms-input-placeholder 
+{ /* Microsoft Edge */
+    color: #707070;
+}
+ footer
+{
+	color:#FFF;
+	font-size:30px;
+	background-color:#000;
+	text-align: center;
+    margin:auto;
+	height:45px;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+}
+
+
+
