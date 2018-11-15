@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="keywords" content ="" />
 		<meta name="description" content ="" />
 		<meta name="author" content ="" /> 
-		 <link rel="stylesheet" type="text/css" href="css/newstylesheet.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/newstylesheet.css">
+		<link rel="icon" href="imgs/inhlogo.png" sizes="16x16 32x32" type="image/png">
+		<link rel="icon" href="inhlogofavicon.svg" type="image/svg+xml" />
+		
 	  
 		<title>
 	contact
@@ -18,8 +22,8 @@
     </video>
 	<section class="mycontent">
 		
-	<header class=thehead>
-	<img src="img/companylogoBG.png">
+	<header  class="theheadcontact">
+	<img src="imgs/companylogoBG.png" alt="image of companylogoBG" title="image of companylogoBG">
 	<h1>
 	COMPANY NAME
 	</h1>
@@ -34,15 +38,17 @@
 	 
 	</ul>
 	</nav>
-		<section id="content4">
-		<h2> CONTACT </h2>
-		<article class="formbox">
+		<article id="content4">
+		<h2 class="NietVoorTablet"> CONTACT </h2>
+		<section class="formbox">
 		<p>More information</p>
 		
 	<form class="formbody" action="nowhere.php" method="post">
 	<fieldset>
-	<section class="theformdropdown">
+	<section class="TheFormDropdown">
 		<label >Select topic</label>
+		<span id="nextlinenotforweb">
+		</span>
 		<select>
 			<option value="general">General inquiries</option>
 			<option value="press">Press relations</option>
@@ -81,12 +87,13 @@
 			value="Submit"
 	/>
 		</form>
-		</article>
 		</section>
+	</article>
 		
 		<footer>
 			&copy; 2018 - MUSKAN BHAT - Inholland
 		</footer>
+	</section>
 		
 		</body>
 </html>
