@@ -7,10 +7,10 @@
 }
 html
 {
-	  background-image:url("img/background.png");
+	   background-image:url("../imgs/background.png");
 	  background-repeat:no-repeat;
+	  width: 100%; 
 	  background-size: cover;
-	  
 }
 Video
  {
@@ -21,75 +21,86 @@ Video
     min-height: 100%;
 	z-index: -1;
 }
-
-
-header{
-	position: relative;
-    text-align: center;
-    color: #FFF;
-    margin: auto;
-    font-size:30pt;
-	background-image:url("img/companylogoBG.png");
-	width:960px;
+/* body styling started */ 
+.mycontent header{
+	background-size:cover;
+	z-index: 1;
+	width:100%;
 	height:200px;
+	position: relative;
+	padding: 0;
+    margin: 0;
+	text-align: center;
+	
+   
 }
-header img
+@font-face
 {
-	 z-index: -1;
+	font-family:'Berlin Sans FB';
+	src:url("../fonts/BRLNSR.woff") format('woff');
 }
-h1
-{
-    font-family: "Lucida Grande", Tahoma, Sans-Serif;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.mycontent header img{
+	width:100%;
+	height:200px;
+	
+}
+a.text{
+	text-decoration:none;
+}
+
+.mycontent header h1
+{     text-align: center;
+	font-family: "Berlin Sans FB",Times New Roman, Times, serif;
+	color:#FFF;
+	font-size:3.9em;
 	text-shadow:
     -1px -1px 0 #000,
     2px -1px 0 #000,
     -1px 2px 0 #000,
     2px 2px 0 #000;
+	position: absolute;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
 	width:100%;
+	height:200px;   
+    text-align: center;
+	vertical-align:middle;
+    line-height:200px;
+	
 }
-
-.navigbar
-{
-	display: flex;
-    justify-content: center;
-	width:100%;
-	height:50px;
-	background-color:#707070;
+.theheadindex .image, 
+.theheadindex .text{
+    display: inline-block;
+    vertical-align: bottom;
+}
+/* navigation bar styling started */ 
+a.navilink{
+	color:#FFF;
+	text-decoration:none;
+	margin:0px 20px 0px 20px;
+}
+nav{
+	background-color:#878787;
 	border-top: 1px solid #FFF;
 	border-bottom: 1px solid #FFF;
+	font-size:30px;
+	height:50px;
+	text-align:center;
+	width:960px;
+	padding-top:11px;
+	
 }
-
-a.navilink
+ul li
 {
-	margin:auto;
-	color:white;
-	text-decoration:none;
+	list-style:none;
+	display:inline;
 }
 a:hover {
     color: #000;
 }
 
-.navigbar ul li 
-{
-	margin-left:10px;
-	margin-right:10px;
-	float :left;
-	font-size:30px;
-	padding-left:10px;
-    padding-right:10px;
-	padding-bottom:0px;
-	padding-top:5px;
-	background-color:#707070;
-	list-style-type:none;
-}
-
 .mycontent {
 	width:960px;
-  
 	margin: auto;
 
 }
@@ -97,12 +108,13 @@ section
 {
 	background-color:#2699FB;
 }
-#content2 img{
+/* index page styling started */ 
+.content2 img{
 	width:960px;
 	height:400px;
 	
 }
-#content2 h2
+.content2 h2
 {
 font-size:76px;	
 font-family: "arial",Times New Roman, Times, serif;
@@ -112,11 +124,12 @@ font-weight: normal;
 padding-top:30px;
 padding-bottom:38px;
 }
-#content3 
+/* product page styling started */ 
+.content3 
 {
 	height:100%;
 }
-#content3 h2
+.content3 h2
 {
 font-size:76px;	
 font-family: "arial",Times New Roman, Times, serif;
@@ -126,7 +139,7 @@ font-weight: normal;
 padding-top:20px;
 padding-bottom:20px;
 }
-#content3 img
+.content3 img
 {
 	background-color:#FFF;
 	width:300px;
@@ -149,13 +162,16 @@ padding-bottom:20px;
   padding-bottom:0.625em;
   padding-top:0.625em;
 }
-	
+.content2 span
+{
+	display:block;
+}
+	/* contact page styling started */ 
  #content4 h2
 {
 font-size:76px;	
 font-family: "arial",Times New Roman, Times, serif;
 text-align:center;
-
 font-weight: normal;
 padding-top:20px;
 padding-bottom:20px;
@@ -164,7 +180,7 @@ padding-bottom:20px;
  {
 	background-color:#F5F5F5; 
 	border:1px solid #AAA;
-    width:960px;
+    width:100%;
 	height:640px;
 	outline: 0;
  }
@@ -178,15 +194,13 @@ padding-bottom:20px;
  }
  .formbody
  { 
-	  display: flex;
-      align-items: center;
-      flex-direction: column;
-	
+	 margin:auto;
+	 width:80%; 
  }
  .formbody input
  {
 	
-	 width:820px; 
+	 width:100%; 
 	 height:56px;
 	 margin-top:26px;
 	 font-size:22px;
@@ -196,9 +210,9 @@ padding-bottom:20px;
 	border-bottom:1px solid #AAA;
 
  }
- .theformdropdown 
+ .TheFormDropdown 
  {
-	width:820px; 
+	width:100%; 
 	height:16px;
 	background-color:#FFF;
 	font-size:22px;
@@ -209,9 +223,9 @@ padding-bottom:20px;
 	border-right:1px solid #AAA;
 	border-bottom:1px solid #AAA;
  }
- .theformdropdown select
+ .TheFormDropdown select
  {
-	width:520px;
+	width:70%;
 	height:40px;	
 	float:right;
 	margin-top:-15px;
@@ -221,7 +235,7 @@ padding-bottom:20px;
  .formbody textarea
  {
 	 height:152px;
-	 width:820px; 
+	width:100%;  
 	 margin-top:26px;
 	 margin-bottom:-4px;
 	 font-size:22px;
@@ -233,7 +247,7 @@ fieldset
  .thesubmitbtn
  {
 	 background-color:#2699FB; 
-	 width:820px;
+	 width:100%;
 	 height:62px;
 	 margin-top:26px;
  }
@@ -265,6 +279,7 @@ color: #707070;
 { /* Microsoft Edge */
     color: #707070;
 }
+/* footer styling started */ 
  footer
 {
 	color:#FFF;
@@ -279,3 +294,224 @@ color: #707070;
 
 
 
+/* media query tablets */ 
+@media only screen and (max-width: 960px){
+ 
+	header{
+		width:100%;
+	  }
+	   header h1
+	   {
+		  width:100%;
+	   }
+
+	  video
+	  {
+		  display:none;
+	  }
+	  
+	  nav{
+		width:100%;
+	  }
+	  
+	  h2
+	  {
+		   width:100%;
+		   background-color:#2699FB;
+	  }
+	.mycontent
+    {
+        width:100%;
+    }
+        footer{
+            width:100%;
+            margin-left:auto;
+            margin-right:auto;
+			z-index:1;
+           }
+     
+	 /* form settings */  
+	 .formbody
+ { 
+	  display: flex;
+      align-items: center;
+      flex-direction: column;
+	
+ }
+	 .formbody  .thesubmitbtn{
+		 width:100%;
+	 }
+	 
+	form select
+    {
+        display:block;
+    }
+	select
+    {
+        width:100%;
+    }
+	.TheFormDropdown {
+			padding-bottom:60px;
+		}
+	#nextlinenotforweb
+	{
+	display:block;
+	}
+	.TheFormDropdown select{
+		float:left;
+		margin-top:5px;
+		 width:100%;
+	}
+	fieldset{
+	  width:100%;
+		}
+		#DeTextArea{
+	  width:100%;
+		}
+		
+	/* form settings ends */ 
+	body{
+        background-image: none ;
+    }
+	
+	#imgg3,#imgg8{
+		width:49%;
+		height:321px;
+		left:0px;
+		right:0px;	
+		border:3px solid #FFF;	
+		object-fit:cover;		
+	}
+	#imgg3{
+	border-right:1px solid #FFF;	
+	}
+	#imgg8{
+		border-left:0.5px solid #FFF;	
+	}
+	.content2 
+	{
+	background-color:#FFF;
+	}
+		
+	
+	.VoorTablet
+	{
+		width:100%;
+		height:100%;
+		z-index:1;
+		background-color:#2699FB;
+	}	
+	
+	#imgg9
+	{
+	width:100%;
+    height:321px;
+	}
+	
+	#imgg6
+	{
+		display:none;
+	}
+	/* some dutch text because I wanted a chnage LOL! */ 
+	.NietVoorTablet
+	{
+		display:none;
+	}
+	.NeitVoorTablet2
+	{
+		display:none;
+	}
+	
+	
+	#img1, #img2, #img3, #img4, #img5, #img6,#img7, #img8, #img9, #img10, #img11, #img12{
+	
+		width:48%;
+		height:215px;
+		left:0px;
+		right:0px;	
+		border-top:1px solid #FFF;
+		}
+		
+		
+		
+}		
+		
+		
+		
+/* media query phones */ 
+@media only screen and (max-width:360px){
+    header{
+		width:100%;
+	  }
+	   header h1
+	   {
+		  width:100%;
+	   }
+
+	  video
+	  {
+		  display:none;
+	  }
+	  
+	  nav{
+		width:100%;
+	  }
+	   ul li{
+                font-size:10px;
+                padding-left:5px;
+                padding-right:5px;    
+        }
+	  
+	  h2
+	  {
+		   width:100%;
+		   background-color:#2699FB;
+	  }
+	.mycontent
+    {
+        width:100%;
+    }
+        footer{
+            width:100%;
+            margin-left:auto;
+            margin-right:auto;
+			z-index:1;
+           }
+     
+	
+	body{
+        background-image: none ;
+    }
+		 
+	 a.navilink{
+				margin:0px 5px 0px 5px;
+		        }
+				
+		
+	.content2 .NietVoorTablet
+	{
+		display:none;
+	}
+	#NotForPhones
+	{
+		display:none;
+	}
+	.NeitVoorTablet2
+	{
+		display:none;
+	}	
+		.content2 img{
+			width:100%;
+		height:321px;
+		left:0px;
+		right:0px;	
+		border:0px solid #FFF;	
+		object-fit:cover;		
+		}	
+		#imgg3,#imgg8
+	{
+	width:100%;
+    height:321px;
+	}
+        
+}
