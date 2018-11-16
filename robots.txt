@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /inholland
+Allow: /sitemap.htm
+Sitemap: http://muskanbhat636130.000webhostapp.com/sitemap.xml
